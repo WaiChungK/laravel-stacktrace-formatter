@@ -1,0 +1,17 @@
+#textarea-input {
+    resize: none;
+    height: 400px;
+}
+
+.button {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.ml-1 {
+    margin-left: 1rem !important;
+}
+
+.mt-1 {
+    margin-top: 1rem !important;
+}

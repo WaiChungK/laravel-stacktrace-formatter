@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+        <link href="./main.css" rel="stylesheet" />
+        <title>Laravel Stack Trace Formatter</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+                <h1>Laravel Stack Trace Formatter</h1>
+            </div>
+        </nav>
+
+        <div class="container mt-1">
+            <h4>Quick & Dirty to format unformatted Laravel/PHP stack trace strings</h4>
+            <div class="form-floating">
+                <textarea id="textarea-input" class="form-control" placeholder="Leave a comment here"></textarea>
+                <label for="textarea-input">Input your thing here</label>
+            </div>
+
+            <div class="d-flex flex-row-reverse">
+                <button class="btn btn-primary button ml-1" type="button" onclick="submit()">Format</button>
+                <button class="btn btn-primary button" type="button" onclick="submit(true)">Format Replace</button>
+            </div>
+        </div>
+
+        <!-- FIXME: to add fixed height and enlargeable modal for more readability -->
+        <div class="container">
+            <div id="textarea-output"></div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="./main.js" type="text/javascript"></script>
+    </body>
+</html>
